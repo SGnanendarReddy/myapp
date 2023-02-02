@@ -1,0 +1,27 @@
+<!-- <div>
+      <form  [formGroup]="loginForm">
+        <div>
+          <label for="email">Email</label>
+          <input formControlName="email"  required  type="email"> <br> <br>
+          <label for="password">Password</label>
+          <input formControlName="password"  type="password">
+        </div>
+        <button (click)="login()">Submit</button>
+        
+      </form>
+  </div> -->
+
+
+  <div>
+    <h1>Hi Welcome Back</h1>
+     <h3>Login Here</h3>
+      <form  [formGroup]="loginForm" (ngSubmit)="login()">
+        <div>
+          <label for="email">Email</label>
+          <input formControlName="email"  required  type="email">
+          <label for="password">Password</label>
+          <input formControlName="password"  type="password">
+        </div>
+        <button>Submit</button> 
+      </form>
+  </div>
